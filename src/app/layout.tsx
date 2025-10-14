@@ -17,7 +17,7 @@ export default function RootLayout({
     return (
         <html lang="en" className={`${inter.variable} ${garamond.variable}`}>
             <body className="font-sans bg-cream text-navy antialiased min-h-screen flex flex-col">
-                <div className="max-w-7xl w-full mx-auto flex flex-col min-h-screen flex-grow animate-fade-in">
+                <div className="w-full mx-auto flex flex-col min-h-screen flex-grow animate-fade-in">
                     <Navbar />
                     <main className="flex-grow">
                         {children}

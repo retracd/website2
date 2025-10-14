@@ -1,13 +1,13 @@
 export default function Home() {
     return (
-        <main className="flex flex-col justify-center px-12 gap-20 pt-12">
-            <div>
-                <h1 className="font-serif italic text-9xl">
-                    Hey there!
+        <main className="flex flex-col justify-center gap-20 pt-12">
+            <div className="px-12">
+                <h1 className="font-serif italic text-[12vw] leading-none">
+                    Brent Mayes is a difference maker.
                 </h1>
             </div>
-            <div className="ml-auto max-w-3xl">
-                <p className="text-left uppercase tracking-tight leading-tight text-2xl">
+            <div className="ml-auto mr-12 max-w-4xl">
+                <p className="text-left text-justify uppercase tracking-tight leading-tight text-3xl">
                     Brent Mayes is a Computer Science Engineering student at the University of Michigan. 
                     With academic experience in data structures and computer security, and professional 
                     experience in cybersecurity, he is building his skills in software engineering and 

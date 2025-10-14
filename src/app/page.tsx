@@ -3,7 +3,7 @@ export default function Home() {
         <main className="flex flex-col justify-center px-12 gap-20 pt-12">
             <div>
                 <h1 className="font-serif italic text-9xl">
-                    Greetings!
+                    Hey there!
                 </h1>
             </div>
             <div className="ml-auto max-w-3xl">

@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        cream: '#FAF7F0',
+        cream: '#F8F4EC',
+        navy: '#0B0C1A',
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'sans-serif'],

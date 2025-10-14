@@ -2,8 +2,8 @@ export default function Home() {
     return (
         <main className="flex flex-col justify-center gap-20 pt-12">
             <div className="px-12">
-                <h1 className="font-serif italic text-[12vw] leading-none">
-                    Brent Mayes is a difference maker.
+                <h1 className="font-serif italic text-[18vw] leading-none font-medium tracking-tight [text-fill-color:transparent] [-webkit-text-fill-color:transparent] [text-stroke:2px_#0B0C1A] [-webkit-text-stroke:2px_#0B0C1A]">
+                    Brent Mayes
                 </h1>
             </div>
             <div className="ml-auto mr-12 max-w-4xl">

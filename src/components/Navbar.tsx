@@ -3,29 +3,25 @@ import Link from 'next/link';
 export default function Navbar() {
   return (
     <nav className="flex justify-end items-center gap-8 px-12 py-6 text-xl">
-        <Link 
-            href="/"
-            className="transition-transform duration-500 ease-out hover:skew-x-[-12deg]"
-        >
-            Home
+        <Link href="/" className="inline-block">
+            <span className="inline-block transition-transform duration-500 ease-out hover:skew-x-[-12deg]">
+                Home
+            </span>
         </Link>
-        <Link
-            href="/about"
-            className="transition-transform duration-500 ease-out hover:skew-x-[-12deg]"
-        >
-            About
+        <Link href="/about" className="inline-block">
+            <span className="inline-block transition-transform duration-500 ease-out hover:skew-x-[-12deg]">
+                About
+            </span>
         </Link>
-        <Link
-            href="/blog"
-            className="transition-transform duration-500 ease-out hover:skew-x-[-12deg]"    
-        >
-            Blog
+        <Link href="/blog" className="inline-block">
+            <span className="inline-block transition-transform duration-500 ease-out hover:skew-x-[-12deg]">
+                Blog
+            </span>
         </Link>
-        <Link
-            href="/info"
-            className="transition-transform duration-500 ease-out hover:skew-x-[-12deg]"    
-        >
-            Info
+        <Link href="/info" className="inline-block">
+            <span className="inline-block transition-transform duration-500 ease-out hover:skew-x-[-12deg]">
+                Info
+            </span>
         </Link>
     </nav>
   );

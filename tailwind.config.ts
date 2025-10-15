@@ -19,10 +19,15 @@ const config: Config = {
       },
       animation: {
         'fade-in': 'fadeIn 1.6s ease-out',
+        'rise-in': 'riseIn 0.6s ease-out',
       },
       keyframes: {
         fadeIn: {
           '0%': { opacity: '0' , transform: 'translateY(15px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        riseIn: {
+          '0%': { opacity: '0', transform: 'translateY(10px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
       },

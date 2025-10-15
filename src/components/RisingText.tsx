@@ -13,9 +13,9 @@ export default function RisingText({ text, className = '' }: RisingTextProps) {
             {words.map((word, i) => (
                 <span
                     key={i}
-                    className="inline-block opacity-0 animate-rise-in"
+                    className="inline-block opacity-0 animate-rise-in mr-[0.15em]"
                     style={{
-                        animationDelay: `${i * 0.05}s`,
+                        animationDelay: `${i * 0.03}s`,
                         animationFillMode: 'forwards',
                     }}
                 >

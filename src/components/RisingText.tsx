@@ -13,13 +13,21 @@ export default function RisingText({ text, className = '' }: RisingTextProps) {
             {words.map((word, i) => (
                 <span
                     key={i}
-                    className="inline-block opacity-0 animate-rise-in mr-[0.15em]"
-                    style={{
-                        animationDelay: `${i * 0.03}s`,
-                        animationFillMode: 'forwards',
+                    className="inline-block overflow-hidden mr-[0.15em]"
+                    style={{ 
+                        verticalAlign: 'bottom',
                     }}
                 >
-                    {word}{' '}
+                    <span
+                        className="inline-block animate-rise-reveal"
+                        style={{
+                            animationDelay: `${i * 0.03}s`,
+                            animationFillMode: 'forwards',
+                            transform: 'translateY(100%)',
+                        }}
+                    >
+                        {word}
+                    </span>
                 </span>
             ))}
         </p>

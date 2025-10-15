@@ -1,11 +1,10 @@
+import DanglingHero from "@/components/DanglingHero";
+
 export default function Home() {
     return (
         <main className="flex flex-col justify-center gap-[8vw]">
-            <div className="px-[3.5vw]">
-                <h1 className="text-[10vw] font-extrabold tracking-tighter leading-none whitespace-nowrap">
-                    mayes, brent.
-                </h1>
-            </div>
+            <DanglingHero />
+
             <div className="ml-auto mr-[3.5vw] w-[81vw] max-w-[1230px]">
                 <p className="text-left uppercase font-bold tracking-tight leading-tight [font-size:clamp(12px,2vw,30px)]">
                     Brent Mayes is a Computer Science Engineering student at the University of Michigan. 

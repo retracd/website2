@@ -14,18 +14,22 @@ export default function DanglingHero() {
             if (!containerRef.current) return;
             // Calculate mouse velocity
             const mouseX = e.clientX;
+            const mouseY = e.clientY;
             const mouseVelocity = mouseX - lastMouseX.current;
             lastMouseX.current = mouseX;
             // Check each letter's proximity to mouse
             const letterElements = containerRef.current.querySelectorAll('.letter');
             letterElements.forEach((el, i) => {
                 const letterRect = el.getBoundingClientRect();
-                const letterCenter = letterRect.left + letterRect.width / 2;
-                const distance = Math.abs(mouseX - letterCenter);
-                // Only affect letters within 100px
-                if (distance < 100) {
-                    // Calculate force; closer letters get more force
-                    const force = (mouseVelocity * (100 - distance)) / 1000;
+
+                const isHovering =
+                    mouseX >= letterRect.left &&
+                    mouseX <= letterRect.right &&
+                    mouseY >= letterRect.top &&
+                    mouseY <= letterRect.bottom;
+
+                if (isHovering) {
+                    const force = -mouseVelocity * 0.04;
                     velocities.current[i] += force;
                 }
             });
@@ -41,7 +45,7 @@ export default function DanglingHero() {
         const animate = () => {
             setRotations(prev => prev.map((rotation, i) => {
                 // Simple spring physics
-                const springForce = -rotation * 0.1;
+                const springForce = -rotation * 0.01;
                 // Apply spring force and damping
                 velocities.current[i] += springForce;
                 velocities.current[i] *= 0.95;

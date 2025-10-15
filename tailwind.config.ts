@@ -18,12 +18,11 @@ const config: Config = {
         'cormorant-garamond': ['var(--font-cormorant-garamond)', 'serif'],
       },
       animation: {
-        'fade-in': 'fadeIn 0.8s ease-out',
+        'fade-in': 'fadeIn 1.6s ease-out',
       },
       keyframes: {
         fadeIn: {
-          '0%': { opacity: '0' , transform: 'translateY(20px)' },
-          '50%': { opacity: '0.8', transform: 'translateY(-3px)' },
+          '0%': { opacity: '0' , transform: 'translateY(15px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
       },

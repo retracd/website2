@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" className={`${inter.variable} ${garamond.variable} ${cormorantGaramond.variable}`}>
-            <body className="font-sans bg-cream text-navy antialiased min-h-screen flex flex-col">
+            <body className="font-sans bg-cream text-navy antialiased min-h-screen flex flex-col cursor-none">
                 <CustomCursor />
                 <div className="w-full mx-auto flex flex-col min-h-screen flex-grow animate-fade-in">
                     <Navbar />

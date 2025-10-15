@@ -6,9 +6,20 @@ export default function CustomCursor() {
     const positionRef = useRef({ x: 0, y: 0 });
     const targetRef = useRef({ x: 0, y: 0 });
     
+    const [isHovering, setIsHovering] = useState(false);
+
     useEffect(() => {
         const handleMouseMove = (e: MouseEvent) => {
             targetRef.current = { x: e.clientX, y: e.clientY };
+
+            const target = e.target as HTMLElement;
+            const isClickable =
+                target.tagName === 'A' ||
+                target.tagName === 'BUTTON' ||
+                target.closest('a') !== null ||
+                target.closest('button') !== null;
+
+            setIsHovering(isClickable);
         };
 
         const animate = () => {
@@ -34,7 +45,9 @@ export default function CustomCursor() {
     return (
         <div
             ref={cursorRef}
-            className="fixed top-0 left-0 w-3 h-3 bg-navy rounded-full pointer-events-none z-50 -translate-x-1/2 -translate-y-1/2"
+            className={`fixed w-3 h-3 bg-navy rounded-full pointer-events-none z-50 -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ease-out ${
+                isHovering ? 'scale-[2] opacity-50' : 'opacity-100'
+            }`}
         />
     );
 }

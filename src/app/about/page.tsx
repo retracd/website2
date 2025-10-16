@@ -10,7 +10,7 @@ export default function About() {
                 <section className="mb-8">
                     <h2 className="text-2xl font-bold mb-2">contact</h2>
                     <div className="space-y-1 pl-6">
-                        <p>bmayes <em>at</em> umich <em>dot</em> edu</p>
+                        <p>bmayes <em className="font-serif font-medium">at</em> umich <em className="font-serif font-medium">dot</em> edu</p>
                         <p>
                             <a 
                                 href="https://brentmayes.com" 

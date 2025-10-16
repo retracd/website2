@@ -9,12 +9,12 @@ export default function About() {
                 {/* Contact */}
                 <section className="mb-12">
                     <h2 className="text-2xl font-bold mb-1">contact</h2>
-                    <div className="space-y-1 pl-4">
+                    <div className="space-y-1 pl-6">
                         <p>bmayes <em>at</em> umich <em>dot</em> edu</p>
                         <p>
                             <a 
                                 href="https://brentmayes.com" 
-                                className="no-underline relative inline-block after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-navy after:transition-all after:duration-300 hover:after:w-full"
+                                className="no-underline relative inline-block after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-navy after:transition-all after:duration-500 hover:after:w-full"
                             >
                                 brentmayes.com
                             </a>
@@ -22,7 +22,7 @@ export default function About() {
                         <p>
                             <a 
                                 href="https://linkedin.com/in/brent-mayes/" 
-                                className="no-underline relative inline-block after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-navy after:transition-all after:duration-300 hover:after:w-full"
+                                className="no-underline relative inline-block after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-navy after:transition-all after:duration-500 hover:after:w-full"
                             >
                                 linkedin.com/in/brent-mayes/
                             </a>

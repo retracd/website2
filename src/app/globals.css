@@ -6,4 +6,9 @@
     a, button {
         cursor: none !important;
     }
+
+    a {
+        text-decoration: none !important;
+        text-decoration-line: none !important;
+    }
 }

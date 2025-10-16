@@ -48,7 +48,23 @@ export default function About() {
                             <ul className="list-disc space-y-1 pl-6">
                                 <li>Wolvsec Computer Security Club Secretary</li>
                                 <li>Honors Mathematics Student</li>
-                                <li className=""><em>Relevant Coursework:</em> Data Structures & Algorithms, Computer Organization, Computer Security, Discrete Math</li>
+                                <li><em>Relevant Coursework:</em> Data Structures & Algorithms, Computer Organization, Computer Security, Discrete Math</li>
+                            </ul>
+                        </div>
+                        {/* Bay College */}
+                        <div>
+                            <div className="flex justify-between items-baseline mb-1">
+                                <h3 className="font-semibold">Bay de Noc Community College</h3>
+                                <span className="text-sm">Iron Mountain, MI</span>
+                            </div>
+                            <div className="flex justify-between items-baseline">
+                                <p className="italic mb-2">Associate in Arts</p>
+                                <span className="text-sm">May 2024</span>
+                            </div>
+                            <ul className="list-disc space-y-1 pl-6">
+                                <li>Dean's List</li>
+                                <li>Phi Theta Kappa Honor Society</li>
+                                <li><em>Dual-enrollment degree</em> achieved alongside high school diploma</li>
                             </ul>
                         </div>
                     </div>

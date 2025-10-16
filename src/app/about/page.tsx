@@ -8,7 +8,7 @@ export default function About() {
 
                 {/* Contact */}
                 <section className="mb-8">
-                    <h2 className="text-2xl font-bold mb-1">contact</h2>
+                    <h2 className="text-2xl font-bold mb-2">contact</h2>
                     <div className="space-y-1 pl-6">
                         <p>bmayes <em>at</em> umich <em>dot</em> edu</p>
                         <p>
@@ -33,7 +33,7 @@ export default function About() {
 
                 {/* Education */}
                 <section className="mb-8">
-                    <h2 className="text-2xl font-bold mb-1">education</h2>
+                    <h2 className="text-2xl font-bold mb-2">education</h2>
                     <div className="space-y-6 pl-6">
                         {/* University of Michigan */}
                         <div>
@@ -66,6 +66,24 @@ export default function About() {
                                 <li>Phi Theta Kappa Honor Society</li>
                                 <li><em>Dual-enrollment degree</em> achieved alongside high school diploma</li>
                             </ul>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Work Experience */}
+                <section className="mb-8">
+                    <h2 className="text-2xl font-bold mb-2">work experience</h2>
+                    <div className="space-y-6 pl-6">
+                        {/* MillerKnoll */}
+                        <div>
+                            <div className="flex justify-between items-baseline mb-1">
+                                <h3 className="font-semibold">MillerKnoll</h3>
+                                <span className="text-sm">Zeeland, MI</span>
+                            </div>
+                            <div className="flex justify-between items-baseline mb-1">
+                                <h3 className="italic mb-2">Information Security Intern</h3>
+                                <span className="text-sm">May 2025 - Aug. 2025; extended - Dec. 2025</span>
+                            </div>
                         </div>
                     </div>
                 </section>

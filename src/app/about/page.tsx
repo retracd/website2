@@ -7,7 +7,7 @@ export default function About() {
                 <hr className="border-navy border-2 mb-12" />
 
                 {/* Contact */}
-                <section className="mb-12">
+                <section className="mb-8">
                     <h2 className="text-2xl font-bold mb-1">contact</h2>
                     <div className="space-y-1 pl-6">
                         <p>bmayes <em>at</em> umich <em>dot</em> edu</p>
@@ -28,6 +28,29 @@ export default function About() {
                             </a>
                         </p>
                         <p>US Citizen</p>
+                    </div>
+                </section>
+
+                {/* Education */}
+                <section className="mb-8">
+                    <h2 className="text-2xl font-bold mb-1">education</h2>
+                    <div className="space-y-6 pl-6">
+                        {/* University of Michigan */}
+                        <div>
+                            <div className="flex justify-between items-baseline mb-1">
+                                <h3 className="font-semibold">University of Michigan</h3>
+                                <span className="text-sm">Ann Arbor, MI</span>
+                            </div>
+                            <div className="flex justify-between items-baseline">
+                                <p className="italic mb-2">Bachelor of Science in Engineering, Computer Science</p>
+                                <span className="text-sm">Expected May 2027</span>
+                            </div>
+                            <ul className="list-disc space-y-1 pl-6">
+                                <li>Wolvsec Computer Security Club Secretary</li>
+                                <li>Honors Mathematics Student</li>
+                                <li className=""><em>Relevant Coursework:</em> Data Structures & Algorithms, Computer Organization, Computer Security, Discrete Math</li>
+                            </ul>
+                        </div>
                     </div>
                 </section>
             </div>

@@ -12,12 +12,18 @@ export default function About() {
                     <div className="space-y-1 pl-4">
                         <p>bmayes <em>at</em> umich <em>dot</em> edu</p>
                         <p>
-                            <a href="https://brentmayes.com" className="hover:underline">
+                            <a 
+                                href="https://brentmayes.com" 
+                                className="no-underline relative inline-block after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-navy after:transition-all after:duration-300 hover:after:w-full"
+                            >
                                 brentmayes.com
                             </a>
                         </p>
                         <p>
-                            <a href="https://linkedin.com/in/brent-mayes/" className="hover:underline">
+                            <a 
+                                href="https://linkedin.com/in/brent-mayes/" 
+                                className="no-underline relative inline-block after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-navy after:transition-all after:duration-300 hover:after:w-full"
+                            >
                                 linkedin.com/in/brent-mayes/
                             </a>
                         </p>

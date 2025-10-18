@@ -139,7 +139,7 @@ export default function About() {
                 {/* Technical Projects */}
                 <section className="mb-8">
                     <h2 className="text-2xl font-bold mb-2">technical projects</h2>
-                    <div className="space-y-1 pl-6">
+                    <div className="space-y-6 pl-6">
                         {/* This site */}
                         <div>
                             <div className="flex justify-between items-baseline mb-1">
@@ -150,6 +150,30 @@ export default function About() {
                                 <li><em>Tech stack:</em> Next.js, React, Tailwind CSS, TypeScript, Figma.</li>
                                 <li>Designed in Figma, development streamlined with Next.js, React, and Tailwind.</li>
                                 <li>Exported with SSG for hosting on cPanel.</li>
+                            </ul>
+                        </div>
+                        {/* StudentVerifer */}
+                        <div>
+                            <div className="flex justify-between items-baseline mb-1">
+                                <h3 className="font-semibold">StudentVerifer</h3>
+                                <span className="text-sm">Jan. 2025 - Apr. 2024</span>
+                            </div>
+                            <ul className="list-disc space-y-1 pl-6">
+                                <li><em>Tech stack:</em> Python, PostgreSQL, smtplib, discord.py, psycopg2.</li>
+                                <li>Built a Discord bot to verify University of Michigan students via the MCommunity API and student emails.</li>
+                                <li>Used an SMTP server to send one-time codes with smtplib.</li>
+                                <li>Linked Discord User IDs to student emails with PostgresSQL to prevent duplicate accounts.</li>
+                            </ul>
+                        </div>
+                        {/* Norway Living Hope Website */}
+                        <div>
+                            <div className="flex justify-between items-baseline mb-1">
+                                <h3 className="font-semibold">Local Church Website</h3>
+                                <span className="text-sm">Oct. 2023 - Jan. 2024</span>
+                            </div>
+                            <ul className="list-disc space-y-1 pl-6">
+                                <li><em>Tech stack:</em> WordPress, Webflow.</li>
+                                <li>Volunteered and consulted to develop SEO-optimized WordPress website for local church.</li>
                             </ul>
                         </div>
                     </div>

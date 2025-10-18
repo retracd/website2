@@ -84,6 +84,12 @@ export default function About() {
                                 <h3 className="italic mb-2">Information Security Intern</h3>
                                 <span className="text-sm">May 2025 - Aug. 2025; extended - Dec. 2025</span>
                             </div>
+                            <ul className="list-disc space-y-1 pl-6">
+                                <li>Drove NetSuite ERP user access review (UAR), identifying role ownership and implementing Jira-based validation access request workflow, enhancing GRC compliance posture and internal controls for future role-based access control (RBAC).</li>
+                                <li>Engineered and deployed organization-wide Wiz Remediation & Response (R&R) Deployment across 63 AWS accounts, establishing one-click and automated remediation for cloud configuration issues, bolstering org’s cloud security posture.</li>
+                                <li>Developed Jira integration for Wiz remediation actions, ensuring real-time issue resolution tracking & audit trail generation.</li>
+                                <li>Selected for internship extension as part-time contractor to assist with SOX auditing automation within OneTrust.</li>
+                            </ul>
                         </div>
                     </div>
                 </section>

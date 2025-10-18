@@ -91,6 +91,48 @@ export default function About() {
                                 <li>Selected for internship extension as part-time contractor to assist with SOX auditing automation within OneTrust.</li>
                             </ul>
                         </div>
+                        {/* Northpointe */}
+                        <div>
+                            <div className="flex justify-between items-baseline mb-1">
+                                <h3 className="font-semibold">Northpointe Behavioral Healthcare System</h3>
+                                <span className="text-sm">Kingsford, MI</span>
+                            </div>
+                            <div className="flex justify-between items-baseline mb-1">
+                                <h3 className="italic mb-2">Information Systems Intern</h3>
+                                <span className="text-sm">Jan. 2024 - June 2024</span>
+                            </div>
+                            <ul className="list-disc space-y-1 pl-6">
+                                <li>Developed synchronization service integrating SaaS payroll and employee database with on-prem data lake via webhooks and RESTful API calls, dynamically updated employee records and securely handled authentication.</li>
+                                <li>Migrated data across NAS systems to enhance workstation performance and connectivity.</li>
+                            </ul>
+                        </div>
+                        {/* Trident Maritime Systems, LLC */}
+                        <div>
+                            <div className="flex justify-between items-baseline mb-1">
+                                <h3 className="font-semibold">Trident Maritime Systems, LLC</h3>
+                                <span className="text-sm">Kingsford, MI</span>
+                            </div>
+                            <div className="flex justify-between items-baseline mb-1">
+                                <h3 className="italic mb-2">Information Systems Technician</h3>
+                                <span className="text-sm">Jan. 2023 - Oct. 2023</span>
+                            </div>
+                            <ul className="list-disc space-y-1 pl-6 mb-1">
+                                <li>Led the national implementation and support of PrinterLogic, a printer management system across 50+ US locations.</li>
+                                <li>Closed more than 200 tickets over the 2023 summer alone, managing the majority of printer, VOIP, and ERP support issues.</li>
+                                <li>Developed, documented, and deployed a software patch that repaired Microsoft Teams Rooms across several locations.</li>
+                                <li>Configured and implemented network maps for PRTG network monitoring software.</li>
+                                <li>Retained and transitioned to Info. Systems Tech role based on strong performance as Database Admin (DBA) Intern.</li>
+                            </ul>
+                            <div className="flex justify-between items-baseline mb-1">
+                                <h3 className="italic mb-2">Database Administration Intern</h3>
+                                <span className="text-sm">June 2022 - Jan. 2023</span>
+                            </div>
+                            <ul className="list-disc space-y-1 pl-6">
+                                <li>Engineered full-stack solutions for internal IT webpages, facilitating CRUD operations via SQL stored procedures.</li>
+                                <li>Imported the entirety of a deprecated MariaDB database into the current MS SQL database.</li>
+                                <li>Standardized data from acquired locations following ACID principles for database integration.</li>
+                            </ul>
+                        </div>
                     </div>
                 </section>
             </div>

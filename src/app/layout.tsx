@@ -3,7 +3,6 @@ import { inter, garamond, cormorantGaramond } from "@/lib/fonts";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CustomCursor from "@/components/CustomCursor";
-import PageTransition from "@/components/PageTransition";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -23,9 +22,7 @@ export default function RootLayout({
                 <div className="w-full mx-auto flex flex-col min-h-screen flex-grow">
                     <Navbar />
                     <main className="flex-grow">
-                        <PageTransition>
-                          {children}
-                        </PageTransition>
+                        {children}
                     </main>
                     <Footer />
                 </div>

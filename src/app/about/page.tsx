@@ -135,6 +135,25 @@ export default function About() {
                         </div>
                     </div>
                 </section>
+
+                {/* Technical Projects */}
+                <section className="mb-8">
+                    <h2 className="text-2xl font-bold mb-2">technical projects</h2>
+                    <div className="space-y-1 pl-6">
+                        {/* This site */}
+                        <div>
+                            <div className="flex justify-between items-baseline mb-1">
+                                <h3 className="font-semibold">Personal Website (this site!)</h3>
+                                <span className="text-sm">Oct. 2023 - Present</span>
+                            </div>
+                            <ul className="list-disc space-y-1 pl-6">
+                                <li><em>Tech stack:</em> Next.js, React, Tailwind CSS, TypeScript, Figma.</li>
+                                <li>Designed in Figma, development streamlined with Next.js, React, and Tailwind.</li>
+                                <li>Exported with SSG for hosting on cPanel.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     );

@@ -2,7 +2,7 @@
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from 'react';
 
-export default function pageTransition({ children }: { children: React.ReactNode }) {
+export default function PageTransition({ children }: { children: React.ReactNode }) {
     const pathname = usePathname();
     const [isVisible, setIsVisible] = useState(false);
 

@@ -178,6 +178,17 @@ export default function About() {
                         </div>
                     </div>
                 </section>
+
+                {/* Skills */}
+                <section className="mb-8">
+                    <h2 className="text-2xl font-bold mb-2">skills</h2>
+                    <ul className="list-disc space-y-1 pl-6">
+                        <li><b>Software Engineering:</b> C++, C, C#, Python, TypeScript, SQL (T-SQL, MySQL), LaTeX, Bash, VSCode, Git, Docker, Jira, Confluence, Postman, Figma, npm, pip</li>
+                        <li><b>Cloud and Information Security:</b> AWS, Wiz, OneTrust, OneLogin, SOX Compliance, CSPM</li>
+                        <li><b>Cybersecurity:</b> Ghidra, Binary Ninja, Burp Suite, Wireshark, OpenSSL, nmap, many many CTFs</li>
+                        <li><b>Systems and Infrastructure:</b> Windows Server, Linux, AD, GP, Hyper-V, MS SQL, VLANs, TCP/IP, SMTP</li>
+                    </ul>
+                </section>
             </div>
         </div>
     );

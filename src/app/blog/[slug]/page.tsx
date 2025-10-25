@@ -1,6 +1,15 @@
 import { getPostsBySlug, getAllPosts } from "@/lib/blog";
 import { notFound } from 'next/navigation';
 
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = await params;
+    const post = await getPostsBySlug(slug);
+
+    return {
+        title: post?.title.toLowerCase() || "a post",
+    };
+}
+
 export async function generateStaticParams() {
     const posts = getAllPosts();
     return posts.map(post => ({

@@ -1,3 +1,7 @@
+export const metadata = {
+    title: "info",
+};
+
 export default function Info() {
     return (
         <div className="flex flex-col items-center px-6 py-6">

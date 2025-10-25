@@ -1,6 +1,10 @@
 import DanglingHero from "@/components/DanglingHero";
 import RisingText from "@/components/RisingText";
 
+export const metadata = {
+    title: "Brent Mayes | home",
+};
+
 export default function Home() {
     return (
         <div className="flex flex-col justify-center gap-[8vw]">

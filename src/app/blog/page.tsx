@@ -12,7 +12,7 @@ export default function Blog() {
                 <hr className="border-navy border-2 mb-12" />
 
                 {posts.length === 0 ? (
-                    <p className='pl-6 text-sm italic'>No posts yet. Check back soon!</p>
+                    <p className='pl-6 italic'>No posts yet. Check back soon!</p>
                 ) : (
                     <div className='space-y-8'>
                     

@@ -33,7 +33,40 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  typography: {
+    DEFAULT: {
+      css: {
+        color: '#0B0C1A',
+        a: {
+          color: '#0B0C1A',
+          '&:hover': {
+            textDecoration: 'underline',
+          },
+        },
+        h1: {
+          color: '#0B0C1A',
+          fontWeight: '700',
+          marginTop: '2rem',
+          marginBottom: '1rem',
+        },
+        h2: {
+          color: '#0B0C1A',
+          fontWeight: '600',
+        },
+        h3: {
+          color: '#0B0C1A',
+          fontWeight: '600',
+        },
+        p: {
+          marginTop: '0.5rem',
+          marginBottom: '0.5rem',
+        },
+      },
+    },
+  },
+  plugins: [
+    require('@tailwindcss/typography')
+  ],
 };
 
 export default config;

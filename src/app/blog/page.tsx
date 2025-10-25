@@ -15,7 +15,22 @@ export default function Blog() {
                     <p className='pl-6 italic'>No posts yet. Check back soon!</p>
                 ) : (
                     <div className='space-y-8'>
-                    
+                        {posts.map(post => (
+                            <article key={post.slug} className='pl-6'>
+                                <Link
+                                    href={`/blog/${post.slug}`}
+                                    className='group'
+                                >
+                                    <h2 className='text=2xl font-bold mb-2 group-hover:underline'>
+                                        {post.title}
+                                    </h2>
+                                    <p className='text-gray-600 mb-2'>{post.date}</p>
+                                    {post.excerpt && ( 
+                                        <p>{post.excerpt}</p>
+                                    )}
+                                </Link>
+                            </article>
+                        ))}
                     </div>
                 )}
             </div>

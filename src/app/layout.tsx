@@ -6,7 +6,10 @@ import CustomCursor from "@/components/CustomCursor";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Brent Mayes",
+  title: {
+    template: "Brent Mayes | %s",
+    default: "Brent Mayes"
+  },
   description: "Personal website and portfolio",
 };
 

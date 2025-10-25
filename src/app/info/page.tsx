@@ -1,3 +1,7 @@
+export const metadata = {
+    title: "info",
+};
+
 export default function Info() {
     return (
         <div className="flex flex-col items-center px-6 py-6">
@@ -61,7 +65,7 @@ export default function Info() {
                         <p>Built using modern software engineering practices with feature branches, pull requests, and clean commit history—all visible in the public GitHub repository.</p>
                         <p>
                             The site is statically exported and hosted on cPanel, ensuring fast load times and minimal server overhead. 
-                            In truth, I purchase this domain and hosting through the same provider, and didn't feel like setting up Vercel.
+                            In truth, I purchase this domain and hosting through the same provider, and didn&apos;t feel like setting up Vercel.
                         </p>
                     </div>
                 </section>
@@ -70,9 +74,9 @@ export default function Info() {
                 <section className="mb-8">
                     <h2 className="text-2xl font-bold mb-2">future plans</h2>
                     <ul className="list-disc space-y-1 pl-12">
+                        <li>Custom 404 page</li>
                         <li>Dark mode toggle</li>
                         <li>Enhanced mobile responsiveness</li>
-                        <li>Performance optimizations</li>
                         <li>Page transition effects (if possible)</li>
                     </ul>
                 </section>

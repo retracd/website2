@@ -1,3 +1,7 @@
+export const metadata = {
+    title: "about",
+};
+
 export default function About() {
     return (
         <div className="flex flex-col items-center px-6 py-6">
@@ -21,7 +25,8 @@ export default function About() {
                         </p>
                         <p>
                             <a 
-                                href="https://linkedin.com/in/brent-mayes/" 
+                                href="https://linkedin.com/in/brent-mayes/"
+                                target="_blank"
                                 className="no-underline relative inline-block after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-navy after:transition-all after:duration-500 hover:after:w-full"
                             >
                                 linkedin.com/in/brent-mayes/
@@ -62,7 +67,7 @@ export default function About() {
                                 <span className="text-sm">May 2024</span>
                             </div>
                             <ul className="list-disc space-y-1 pl-6">
-                                <li>Dean's List</li>
+                                <li>Dean&apos;s List</li>
                                 <li>Phi Theta Kappa Honor Society</li>
                                 <li><em>Dual-enrollment degree</em> achieved alongside high school diploma</li>
                             </ul>

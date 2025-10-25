@@ -1,6 +1,15 @@
 import { getPostsBySlug, getAllPosts } from "@/lib/blog";
 import { notFound } from 'next/navigation';
 
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = await params;
+    const post = await getPostsBySlug(slug);
+
+    return {
+        title: post?.title.toLowerCase() || "a post",
+    };
+}
+
 export async function generateStaticParams() {
     const posts = getAllPosts();
     return posts.map(post => ({
@@ -8,7 +17,7 @@ export async function generateStaticParams() {
     }));
 }
 
-export default async function Post({ params }: { params: { slug: string } }) {
+export default async function Post({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params;
     const post = await getPostsBySlug(slug);
 
@@ -26,7 +35,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
                 <hr className="border-navy border-2 mb-12" />
 
                 <div
-                    className="prose prose-sm max-w-none [&>h1]:mb-2 [&>h2]:mb-2 [&>h2]:mt-6 [&>h3]:mb-2 [&>h3]:mt-4 [&>p]:my-2 [&>ul]:my-2 [&>li]:my-1"
+                    className="prose prose-sm max-w-none [&>h1]:text-2xl [&>h1]:font-bold [&>h1]:mb-2 [&>h2]:mb-2 [&>h2]:mt-6 [&>h3]:mb-2 [&>h3]:mt-4 [&>p]:pl-6 [&>p]:my-2 [&>p]:text-base [&>p]:text-navy [&>ul]:my-2 [&>li]:my-1"
                     dangerouslySetInnerHTML={{ __html: post.content }}
                 />
             </article>

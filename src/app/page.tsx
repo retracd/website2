@@ -3,7 +3,7 @@ import RisingText from "@/components/RisingText";
 
 export default function Home() {
     return (
-        <main className="flex flex-col justify-center gap-[8vw]">
+        <div className="flex flex-col justify-center gap-[8vw]">
             <DanglingHero />
 
             <div className="ml-auto mr-[3.5vw] w-[81vw] max-w-[1230px]">
@@ -12,6 +12,6 @@ export default function Home() {
                     className="text-left lowercase font-bold tracking-tight leading-tight [font-size:clamp(12px,2vw,30px)]"
                 />
             </div>
-        </main>
+        </div>
     );
 }

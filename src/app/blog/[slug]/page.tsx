@@ -26,7 +26,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
                 <hr className="border-navy border-2 mb-12" />
 
                 <div
-                    className="prose prose-sm max-w-none"
+                    className="prose prose-sm max-w-none [&>h1]:mb-2 [&>h2]:mb-2 [&>h2]:mt-6 [&>h3]:mb-2 [&>h3]:mt-4 [&>p]:my-2 [&>ul]:my-2 [&>li]:my-1"
                     dangerouslySetInnerHTML={{ __html: post.content }}
                 />
             </article>

@@ -21,7 +21,8 @@ export default function About() {
                         </p>
                         <p>
                             <a 
-                                href="https://linkedin.com/in/brent-mayes/" 
+                                href="https://linkedin.com/in/brent-mayes/"
+                                target="_blank"
                                 className="no-underline relative inline-block after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-navy after:transition-all after:duration-500 hover:after:w-full"
                             >
                                 linkedin.com/in/brent-mayes/

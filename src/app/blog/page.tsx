@@ -14,7 +14,7 @@ export default function Blog() {
                 {posts.length === 0 ? (
                     <p className='pl-6 italic'>No posts yet. Check back soon!</p>
                 ) : (
-                    <div className='space-y-8'>
+                    <div className='space-y-12'>
                         {posts.map(post => (
                             <article key={post.slug} className='pl-6'>
                                 <Link

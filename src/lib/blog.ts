@@ -40,3 +40,25 @@ export function getAllPosts() : BlogPost[] {
     // Sorts posts by newest date
     return allPostsData.sort((a, b) => (a.date < b.date ? 1 : -1));
 }
+
+export async function getPostsBySlug(slug: string): Promise<BlogPost | null> {
+    const fullPath = path.join(postsDirectory, `${slug}.md`);
+
+    if (!fs.existsSync(fullPath)) {
+        return null;
+    }
+
+    const fileContents = fs.readFileSync(fullPath, 'utf-8');
+    const { data, content } = matter(fileContents);
+
+    const processedContent = await remark().use(html).process(content);
+    const contentHtml = processedContent.toString();
+
+    return {
+        slug,
+        title: data.title,
+        date: data.date,
+        excerpt: data.excerpt,
+        content: contentHtml,
+    };
+}

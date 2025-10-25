@@ -66,6 +66,33 @@ export default function Info() {
                     </div>
                 </section>
 
+                {/* Future Plans */}
+                <section className="mb-8">
+                    <h2 className="text-2xl font-bold mb-2">future plans</h2>
+                    <ul className="list-disc space-y-1 pl-12">
+                        <li>Dark mode toggle</li>
+                        <li>Enhanced mobile responsiveness</li>
+                        <li>Performance optimizations</li>
+                        <li>Page transition effects (if possible)</li>
+                    </ul>
+                </section>
+
+                {/* Repository */}
+                <section className="mb-8">
+                    <h2 className="text-2xl font-bold mb-2">source code</h2>
+                    <div className="pl-6">
+                        <p>
+                            View the full source code on{' '}
+                            <a 
+                                href="https://github.com/retracd/website2"
+                                target="_blank"
+                                className="no-underline relative inline-block after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-navy after:transition-all after:duration-500 hover:after:w-full"
+                            >
+                                GitHub
+                            </a>
+                        </p>
+                    </div>
+                </section>
             </div>
         </div>
     );

@@ -38,6 +38,34 @@ export default function Info() {
                     </div>
                 </section>
 
+                {/* Design Philosophy */}
+                <section className="mb-8">
+                    <h2 className="text-2xl font-bold mb-2">design philosophy</h2>
+                    <div className="pl-6 space-y-2">
+                        <p>
+                            The design centers on a single typeface, the sans-serif Inter, to create a clean and unified aesthetic.
+                            Contrast and hierachy are achieved not by mixing fonts, but through careful variations in font weight, size, and spacing.
+                            This typographic minimalism is paired with contemporary lowercase styling.
+                        </p>
+                        <p>
+                            Interactive elements like the dangling hero text and custom cursor add personality without overwhelming the content. 
+                            The cream background and dark navy text create a warm, readable experience.
+                        </p>
+                    </div>
+                </section>
+
+                {/* Development Workflow */}
+                <section className="mb-8">
+                    <h2 className="text-2xl font-bold mb-2">development workflow</h2>
+                    <div className="pl-6 space-y-2">
+                        <p>Built using modern software engineering practices with feature branches, pull requests, and clean commit history—all visible in the public GitHub repository.</p>
+                        <p>
+                            The site is statically exported and hosted on cPanel, ensuring fast load times and minimal server overhead. 
+                            In truth, I purchase this domain and hosting through the same provider, and didn't feel like setting up Vercel.
+                        </p>
+                    </div>
+                </section>
+
             </div>
         </div>
     );

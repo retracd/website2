@@ -70,9 +70,9 @@ export default function Info() {
                 <section className="mb-8">
                     <h2 className="text-2xl font-bold mb-2">future plans</h2>
                     <ul className="list-disc space-y-1 pl-12">
+                        <li>Custom 404 page</li>
                         <li>Dark mode toggle</li>
                         <li>Enhanced mobile responsiveness</li>
-                        <li>Performance optimizations</li>
                         <li>Page transition effects (if possible)</li>
                     </ul>
                 </section>

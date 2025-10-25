@@ -15,6 +15,29 @@ export default function Info() {
                     </div>
                 </section>
 
+                {/* Tech Stack */}
+                <section className="mb-8">
+                    <h2 className="text-2xl font-bold mb-2">tech stack</h2>
+                    <div className="pl-6 space-y-4">
+                        <div>
+                            <h3 className="font-semibold mb-1">Next.js 15 & React 19</h3>
+                            <p className="text-sm">Modern React framework with App Router for static site generation and optimal performance.</p>
+                        </div>
+                        <div>
+                            <h3 className="font-semibold mb-1">TypeScript</h3>
+                            <p className="text-sm">Type-safe development for better code quality and developer experience.</p>
+                        </div>
+                        <div>
+                            <h3 className="font-semibold mb-1">Tailwind CSS</h3>
+                            <p className="text-sm">Utility-first CSS framework for rapid, consistent styling.</p>
+                        </div>
+                        <div>
+                            <h3 className="font-semibold mb-1">Framer Motion</h3>
+                            <p className="text-sm">Animation library for smooth, interactive UI transitions.</p>
+                        </div>
+                    </div>
+                </section>
+
             </div>
         </div>
     );

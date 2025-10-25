@@ -21,10 +21,12 @@ export default function Blog() {
                                     href={`/blog/${post.slug}`}
                                     className='group'
                                 >
-                                    <h2 className='text=2xl font-bold mb-2 group-hover:underline'>
+                                    <div className="flex justify-between items-baseline">
+                                        <h2 className='no-underline text=2xl font-bold mb-2 relative inline-block after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-navy after:transition-all after:duration-500 group-hover:after:w-full'>
                                         {post.title}
-                                    </h2>
-                                    <p className='text-gray-600 mb-2'>{post.date}</p>
+                                        </h2>
+                                        <p className='mb-2'>{post.date}</p>
+                                    </div>
                                     {post.excerpt && ( 
                                         <p>{post.excerpt}</p>
                                     )}

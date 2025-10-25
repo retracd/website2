@@ -61,7 +61,7 @@ export default function Info() {
                         <p>Built using modern software engineering practices with feature branches, pull requests, and clean commit history—all visible in the public GitHub repository.</p>
                         <p>
                             The site is statically exported and hosted on cPanel, ensuring fast load times and minimal server overhead. 
-                            In truth, I purchase this domain and hosting through the same provider, and didn't feel like setting up Vercel.
+                            In truth, I purchase this domain and hosting through the same provider, and didn&apos;t feel like setting up Vercel.
                         </p>
                     </div>
                 </section>

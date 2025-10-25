@@ -62,7 +62,7 @@ export default function About() {
                                 <span className="text-sm">May 2024</span>
                             </div>
                             <ul className="list-disc space-y-1 pl-6">
-                                <li>Dean's List</li>
+                                <li>Dean&apos;s List</li>
                                 <li>Phi Theta Kappa Honor Society</li>
                                 <li><em>Dual-enrollment degree</em> achieved alongside high school diploma</li>
                             </ul>

@@ -27,8 +27,8 @@ export default function CustomCursor() {
             lastFrameMS = time;
 
             // Lerp
-            positionRef.current.x += (targetRef.current.x - positionRef.current.x) * 17 * dt;
-            positionRef.current.y += (targetRef.current.y - positionRef.current.y) * 17 * dt;
+            positionRef.current.x += (targetRef.current.x - positionRef.current.x) * 30 * dt;
+            positionRef.current.y += (targetRef.current.y - positionRef.current.y) * 30 * dt;
 
             // Apply smoothed position
             cursorRef.current.style.left = `${positionRef.current.x}px`;

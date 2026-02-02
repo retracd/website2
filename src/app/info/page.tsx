@@ -15,7 +15,7 @@ export default function Info() {
                     <h2 className="text-2xl font-bold mb-2">overview</h2>
                     <div className="pl-6 space-y-2">
                         <p>This website was built from scratch as a personal project to showcase my work and writing while exploring modern web development practices.</p>
-                        <p>The site emphasizes clean design, thoughtful interactions, and performance—hosted statically for speed and reliability.</p>
+                        <p>The site emphasizes clean design, thoughtful interactions, and performance.</p>
                     </div>
                 </section>
 

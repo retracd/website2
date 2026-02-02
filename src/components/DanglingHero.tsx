@@ -41,22 +41,30 @@ export default function DanglingHero() {
     // Animation loop to update rotations based on velocities
     useEffect(() => {
         let animationFrame: number;
+        let lastFrameMS = performance.now();
 
-        const animate = () => {
+        const animate = (time: number) => {
+            const dt = (time - lastFrameMS) / 1000;
+            lastFrameMS = time;
+
+            const delta = Math.min(dt, 0.1);
+
             setRotations(prev => prev.map((rotation, i) => {
                 // Simple spring physics
-                const springForce = -rotation * 0.01;
-                // Apply spring force and damping
-                velocities.current[i] += springForce;
-                velocities.current[i] *= 0.95;
+                const springForce = -rotation * 1.5;
+                // Apply spring force acceleration
+                velocities.current[i] += springForce * delta;
+                // Damping
+                velocities.current[i] *= Math.pow(0.05, delta);
 
-                return rotation + velocities.current[i];
+                return rotation + velocities.current[i] * delta * 60;
             }));
 
             animationFrame = requestAnimationFrame(animate);
         };
 
-        animate();
+        //animate();
+        animationFrame = requestAnimationFrame(animate);
         // Cleanup on unmount
         return () => cancelAnimationFrame(animationFrame);
     }, []);

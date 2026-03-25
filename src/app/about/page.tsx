@@ -172,7 +172,7 @@ export default function About() {
                         <div>
                             <div className="flex justify-between items-baseline mb-1">
                                 <h3 className="font-semibold">StudentVerifer</h3>
-                                <span className="text-sm">Jan. 2025 - Apr. 2024</span>
+                                <span className="text-sm">Jan. 2025 - Apr. 2025</span>
                             </div>
                             <ul className="list-disc space-y-1 pl-6">
                                 <li><em>Tech stack:</em> Python, PostgreSQL, smtplib, discord.py, psycopg2.</li>

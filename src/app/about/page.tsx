@@ -79,6 +79,17 @@ export default function About() {
                 <section className="mb-8">
                     <h2 className="text-2xl font-bold mb-2">work experience</h2>
                     <div className="space-y-6 pl-6">
+                        {/* PayPal */}
+                        <div>
+                            <div className="flex justify-between items-baseline mb-1">
+                                <h3 className="font-semibold">PayPal</h3>
+                                <span className="text-sm">Scottsdale, AZ</span>
+                            </div>
+                            <div className="flex justify-between items-baseline mb-1">
+                                <h3 className="italic mb-2">Incoming Cyber Defense Intern</h3>
+                                <span className="text-sm">May 2026 - Aug. 2026</span>
+                            </div>
+                        </div>
                         {/* MillerKnoll */}
                         <div>
                             <div className="flex justify-between items-baseline mb-1">

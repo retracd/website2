@@ -1,7 +1,10 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
+import { isMobile } from 'react-device-detect';
 
 export default function CustomCursor() {
+    if (isMobile) return null; // basic mobile device check
+    
     const cursorRef = useRef<HTMLDivElement>(null);
     const positionRef = useRef({ x: 0, y: 0 });
     const targetRef = useRef({ x: 0, y: 0 });

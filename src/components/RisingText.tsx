@@ -1,5 +1,4 @@
 'use client';
-import { useAccessibility } from '@/app/providers';
 
 interface RisingTextProps {
     text: string;
@@ -7,7 +6,6 @@ interface RisingTextProps {
 }
 
 export default function RisingText({ text, className = '' }: RisingTextProps) {
-    const { animationsEnabled } = useAccessibility();
     const words = text.split(' '); // split text into words
 
     return (
@@ -21,13 +19,11 @@ export default function RisingText({ text, className = '' }: RisingTextProps) {
                     }}
                 >
                     <span
-                        className={`inline-block ${animationsEnabled ? 'animate-rise-reveal' : ''}`}
+                        className="inline-block animate-rise-reveal"
                         style={{
-                            ...(animationsEnabled && {
-                                animationDelay: `${i * 0.03}s`,
-                                animationFillMode: 'forwards',
-                                transform: 'translateY(100%)',
-                            })
+                            animationDelay: `${i * 0.03}s`,
+                            animationFillMode: 'forwards',
+                            transform: 'translateY(100%)',
                         }}
                     >
                         {word}

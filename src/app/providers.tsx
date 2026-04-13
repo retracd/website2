@@ -43,6 +43,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
         if (!mounted) return;
         localStorage.setItem('animationsEnabled', String(animationsEnabled));
         document.body.classList.toggle('animate-fade-in', animationsEnabled);
+        document.body.classList.toggle('animations-disabled', !animationsEnabled);
     }, [animationsEnabled, mounted]);
 
     return (

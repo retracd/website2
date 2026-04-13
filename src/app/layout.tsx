@@ -22,7 +22,22 @@ export default function RootLayout({
     return (
         <html lang="en" className={`${inter.variable} ${garamond.variable} ${cormorantGaramond.variable}`} suppressHydrationWarning>
             <Providers>
-                <body className="font-sans bg-cream text-navy dark:bg-navy dark:text-cream antialiased min-h-screen flex flex-col cursor-none animate-fade-in transition-colors duration-300">
+                <body suppressHydrationWarning className="font-sans bg-cream text-navy dark:bg-navy dark:text-cream antialiased min-h-screen flex flex-col cursor-none animate-fade-in transition-colors duration-300">
+                    <script
+                        dangerouslySetInnerHTML={{
+                            __html: `
+                                try {
+                                    if (localStorage.getItem('animationsEnabled') === 'false') {
+                                        document.body.classList.remove('animate-fade-in');
+                                        document.body.classList.add('animations-disabled');
+                                    }
+                                    if (localStorage.getItem('cursorEnabled') === 'false') {
+                                        document.body.classList.remove('cursor-none');
+                                    }
+                                } catch (e) {}
+                            `
+                        }}
+                    />
                     <CustomCursor />
                     <div className="w-full mx-auto flex flex-col min-h-screen flex-grow">
                         <Navbar />

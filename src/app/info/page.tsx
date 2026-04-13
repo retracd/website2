@@ -8,7 +8,7 @@ export default function Info() {
             <div className="w-full max-w-[800px]">
                 {/* Header */}
                 <h1 className="text-5xl font-bold">info</h1>
-                <hr className="border-navy border-2 mb-12" />
+                <hr className="border-navy dark:border-cream border-2 mb-12" />
 
                 {/* Overview */}
                 <section className="mb-8">
@@ -74,9 +74,9 @@ export default function Info() {
                 <section className="mb-8">
                     <h2 className="text-2xl font-bold mb-2">future plans</h2>
                     <ul className="list-disc space-y-1 pl-12">
-                        <li>Custom 404 page</li>
-                        <li>Dark mode toggle</li>
+                        <li>Further accessibility improvements like adding more `alt` text and `aria-label` labels where needed, and ensuring heading hiearchy flows logically</li>
                         <li>Enhanced mobile responsiveness</li>
+                        <li>Custom 404 page</li>
                         <li>Page transition effects (if possible)</li>
                     </ul>
                 </section>

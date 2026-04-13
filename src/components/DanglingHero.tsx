@@ -1,7 +1,9 @@
 'use client';
 import { useState, useRef, useEffect } from 'react';
+import { useAccessibility } from '@/app/providers';
 
 export default function DanglingHero() {
+    const { animationsEnabled } = useAccessibility();
     const text = "mayes, brent.";
     const letters = text.split(''); // split text into indivudal letters
     const [rotations, setRotations] = useState(letters.map(() => 0)); // track rotation angle for each letter
@@ -10,6 +12,8 @@ export default function DanglingHero() {
     const lastMouseX = useRef(0);
 
     useEffect(() => {
+        if (!animationsEnabled) return;
+
         const handleMouseMove = (e: MouseEvent) => {
             if (!containerRef.current) return;
             // Calculate mouse velocity
@@ -37,9 +41,11 @@ export default function DanglingHero() {
 
         window.addEventListener('mousemove', handleMouseMove);
         return () => window.removeEventListener('mousemove', handleMouseMove);
-    }, []);
+    }, [animationsEnabled]);
+
     // Animation loop to update rotations based on velocities
     useEffect(() => {
+        if (!animationsEnabled) return;
         let animationFrame: number;
         let lastFrameMS = performance.now();
 
@@ -67,7 +73,7 @@ export default function DanglingHero() {
         animationFrame = requestAnimationFrame(animate);
         // Cleanup on unmount
         return () => cancelAnimationFrame(animationFrame);
-    }, []);
+    }, [animationsEnabled]);
 
     return (
         <div className="px-[3.5vw]" ref={containerRef}>

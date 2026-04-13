@@ -3,12 +3,17 @@
 @tailwind utilities;
 
 @layer base {
-    a, button {
+    body.cursor-none a, body.cursor-none button {
         cursor: none !important;
     }
 
     a {
         text-decoration: none !important;
         text-decoration-line: none !important;
+    }
+
+    body.animations-disabled .animate-rise-reveal {
+        animation: none !important;
+        transform: none !important;
     }
 }

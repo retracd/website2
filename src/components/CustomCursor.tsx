@@ -1,16 +1,18 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
 import { isMobile } from 'react-device-detect';
+import { useAccessibility } from '@/app/providers';
 
 export default function CustomCursor() {
-    if (isMobile) return null; // basic mobile device check
-    
     const cursorRef = useRef<HTMLDivElement>(null);
     const positionRef = useRef({ x: 0, y: 0 });
     const targetRef = useRef({ x: 0, y: 0 });
     const [isHovering, setIsHovering] = useState(false);
+    const { cursorEnabled } = useAccessibility();
 
     useEffect(() => {
+        if (!cursorEnabled || isMobile) return;
+
         const handleMouseMove = (e: MouseEvent) => {
             targetRef.current = { x: e.clientX, y: e.clientY };
             const target = e.target as HTMLElement;
@@ -45,14 +47,18 @@ export default function CustomCursor() {
         //animate();
         const frameId = requestAnimationFrame(animate);
         
-        return () => window.removeEventListener('mousemove', handleMouseMove);
-        cancelAnimationFrame(frameId);
-    }, []);
+        return () => {
+            window.removeEventListener('mousemove', handleMouseMove);
+            cancelAnimationFrame(frameId);
+        };
+    }, [cursorEnabled]);
+
+    if (isMobile || !cursorEnabled) return null;
 
     return (
         <div
             ref={cursorRef}
-            className={`fixed w-3 h-3 bg-navy rounded-full pointer-events-none z-50 -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ease-out ${
+            className={`fixed w-3 h-3 bg-navy dark:bg-cream rounded-full pointer-events-none z-50 -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ease-out ${
                 isHovering ? 'scale-[2] opacity-50' : 'opacity-100'
             }`}
         />

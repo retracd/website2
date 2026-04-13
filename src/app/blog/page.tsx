@@ -13,7 +13,7 @@ export default function Blog() {
             <div className="w-full max-w-[800px]">
                 {/* Header */}
                 <h1 className="text-5xl font-bold">blog</h1>
-                <hr className="border-navy border-2 mb-12" />
+                <hr className="border-navy dark:border-cream border-2 mb-12" />
 
                 {posts.length === 0 ? (
                     <p className='pl-6 italic'>No posts yet. Check back soon!</p>

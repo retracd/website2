@@ -23,6 +23,11 @@ export default function Navbar() {
                 info
             </span>
         </Link>
+        <Link href="/settings" className="inline-block">
+            <span className="inline-block underline transition-transform duration-500 ease-out hover:[transform:skewX(-12deg)_translateX(3px)]">
+                settings
+            </span>
+        </Link>
     </nav>
   );
 }

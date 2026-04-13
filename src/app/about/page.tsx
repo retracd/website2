@@ -8,7 +8,7 @@ export default function About() {
             <div className="w-full max-w-[800px]">
                 {/* Header */}
                 <h1 className="text-5xl font-bold">about</h1>
-                <hr className="border-navy border-2 mb-12" />
+                <hr className="border-navy dark:border-cream border-2 mb-12" />
 
                 {/* Contact */}
                 <section className="mb-8">

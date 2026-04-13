@@ -18,6 +18,14 @@ export default function ThemeSwitcher() {
     return (
         <>
             <button
+                onClick={() => setTheme('system')}
+                className={`underline transition-transform duration-500 ease-out hover:[transform:skewX(-12deg)_translateX(3px)] ${
+                    theme === 'system' ? 'font-bold' : 'font-normal'
+                }`}
+            >
+                system
+            </button>
+            <button
                 onClick={() => setTheme('light')}
                 className={`underline transition-transform duration-500 ease-out hover:[transform:skewX(-12deg)_translateX(3px)] ${
                     theme === 'light' ? 'font-bold' : 'font-normal'

@@ -52,7 +52,7 @@ export default function CustomCursor() {
     return (
         <div
             ref={cursorRef}
-            className={`fixed w-3 h-3 bg-navy rounded-full pointer-events-none z-50 -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ease-out ${
+            className={`fixed w-3 h-3 bg-navy dark:bg-cream rounded-full pointer-events-none z-50 -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ease-out ${
                 isHovering ? 'scale-[2] opacity-50' : 'opacity-100'
             }`}
         />

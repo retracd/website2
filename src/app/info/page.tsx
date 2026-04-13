@@ -8,7 +8,7 @@ export default function Info() {
             <div className="w-full max-w-[800px]">
                 {/* Header */}
                 <h1 className="text-5xl font-bold">info</h1>
-                <hr className="border-navy border-2 mb-12" />
+                <hr className="border-navy dark:border-cream border-2 mb-12" />
 
                 {/* Overview */}
                 <section className="mb-8">
